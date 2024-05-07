@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="19dp">
+
+        <!-- Input Field for Book ID -->
+        <EditText
+            android:id="@+id/editTextBookID"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:hint="Enter Book ID"
+            android:inputType="text" />
+
+        <!-- Input Field for Book Title -->
+        <EditText
+            android:id="@+id/editTextBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Book Title"
+            android:inputType="text" />
+
+        <!-- Input Field for Publisher Name -->
+        <EditText
+            android:id="@+id/editTextPublisherName"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:hint="Enter Publisher Name"
+            android:inputType="text" />
+
+        <!-- Button to Add a Book -->
+
+        <!-- Button to Update a Book -->
+
+        <!-- Button to Delete a Book -->
+        <Button
+            android:id="@+id/buttonAddBook"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Add Book"
+            app:icon="@android:drawable/ic_input_add" />
+
+        <Button
+            android:id="@+id/buttonUpdateBook"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Update Book"
+            app:icon="@android:drawable/ic_menu_set_as" />
+
+        <Button
+            android:id="@+id/buttonDeleteBook"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+
+            android:text="Delete Book"
+            android:textColorLink="#DF56F6"
+            app:icon="@android:drawable/ic_delete" />
+
+        <!-- Button to View All Books -->
+        <Button
+            android:id="@+id/buttonViewBooks"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="View Books"
+            android:textColorLink="#9C27B0"
+            app:icon="?attr/actionModePasteDrawable" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/viewMembers"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="#94D554"
+                android:hint="Members Details"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            <Button
+                android:id="@+id/buttonMembers"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="Members List"
+                android:textColorLink="#FC2196F3"
+                app:icon="@android:drawable/ic_menu_myplaces"
+                app:strokeColor="#FBFAFA" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="142dp"
+                app:srcCompat="@mipmap/ic_launcher_foreground" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
